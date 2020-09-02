@@ -1,0 +1,100 @@
+// ШРИФТ ПО УМОЛЧАНИЮ
+
+// ШРИФТЫ
+@font-face{
+    font-family: 'Gotham-Pro-Light';
+    src:url('../fonts/Light.ttf');
+}
+
+@font-face{
+    font-family: 'Gotham-Pro-Regular';
+    src:url('../fonts/regular.ttf');
+}
+
+@font-face{
+    font-family: 'Gotham-Pro-medium';
+    src:url('../fonts/medium.ttf');
+}
+
+@font-face{
+    font-family: 'Gotham-Pro-Bold';
+    src:url('../fonts/Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Gotham-Pro-Black';
+    src:url('../fonts/black.ttf');
+}
+// ОБНУЛЕНИЕ
+@import "null.scss";
+
+//МИКСИНЫ
+@import "mixin.scss";
+
+// ОБОЛОЧКА 
+.wrapper{
+    max-width:1440px;
+    margin:0 auto;
+    position: relative;
+    padding-bottom:180px;
+    padding-right:15px;
+    padding-left:15px;
+
+    @media(max-width:767px){
+        padding-bottom: 255px;
+    }
+}
+
+// ОСНОВНАЯ СЕТКА (Выравнивание пример: 1170px)
+.container{
+    max-width:1190px;
+    padding-left:15px;
+    padding-right:15px;
+    margin:0 auto;
+    position: relative;
+}
+
+// СТАНДАРТНЫЕ ПЕРЕМЕННЫЕ
+.active{
+    display:block;
+}
+
+.disable{
+    display:none;
+}
+
+.mb0{
+    margin-bottom: 0!important;
+}
+
+
+*a{
+    display:block;
+}
+// ПЕРЕМЕННЫЕ ПРОЕКТА
+.colorYel{
+    color:#EBC975;
+}
+
+.colorDop{
+    color:#979797;
+}
+
+
+.deg180{
+    transform: rotate(-180deg);
+}
+
+.deg0{
+    transform: rotate(0deg);
+}
+
+.mediumFont{
+    font-family: 'Gotham-Pro-medium';
+}
+// ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ
+@import "head.scss";
+@import "products.scss";
+@import "slider.scss";
+@import "info.scss";
+@import "footer.scss";
